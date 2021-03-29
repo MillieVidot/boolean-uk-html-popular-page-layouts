@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  display: grid;
+  grid-template:
+    "left-nav header header" 40px
+    "left-nav channels main" 1fr /
+    40px 100px 1fr;
+
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: rgba(255, 0, 0, 1);
+}
+
+.left-nav {
+  grid-area: left-nav;
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.main {
+  grid-area: main;
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.channels {
+  grid-area: channels;
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.right-nav {
+  grid-area: right-nav;
+  background-color: rgba(255, 0, 0, 0.4);
+}

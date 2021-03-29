@@ -37,3 +37,12 @@
   grid-area: right-nav;
   background-color: rgba(255, 0, 0, 0.4);
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template:
+      "left-nav header header" 40px
+      "left-nav channels main" 1fr /
+      40px 40px 1fr;
+  }

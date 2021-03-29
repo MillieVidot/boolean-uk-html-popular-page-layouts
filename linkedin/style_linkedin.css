@@ -45,3 +45,21 @@
     display: none;
   }
 }
+
+.main {
+  display: grid;
+  grid-template:
+    "make-post" 50px
+    "feed" 1fr /
+    1fr;
+}
+
+.make-post {
+  grid-area: make-post;
+  background-color: grey;
+}
+
+.feed {
+  grid-area: feed;
+  background-color: rgb(92, 92, 92);
+}
